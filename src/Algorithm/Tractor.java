@@ -1,10 +1,10 @@
 package Algorithm;
 
-public class Car implements Product {
+public class Tractor implements Product {
     private String color;
     private String name;
 
-    public Car(String color, String name) {
+    public Tractor(String color, String name) {
         this.color = color;
         this.name = name;
     }
@@ -25,4 +25,10 @@ public class Car implements Product {
         this.color = color;
     }
 
+    public String getChar() {
+        return color;
+    }
+    public void setChar(String color) {
+        this.color = color;
+    }
 }

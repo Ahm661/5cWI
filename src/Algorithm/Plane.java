@@ -1,11 +1,11 @@
 package Algorithm;
 
-public class Bike {
+public class Plane implements Product {
 
     private String style;
     private String name;
 
-    public Bike(String style, String name) {
+    public Plane(String style, String name) {
         this.style = style;
         this.name = name;
     }
@@ -17,6 +17,10 @@ public class Bike {
     @Override
     public String getName() {
         return name;
+    }
+
+    public String getChar() {
+        return style;
     }
 
 }

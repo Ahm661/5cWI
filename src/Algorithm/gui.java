@@ -1,10 +1,13 @@
 package Algorithm;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 public class gui {
-   
+
     private List<Product> procucts = new ArrayList<Product>();
+    private List<Char> chars = new ArrayList<Char>();
 
     private Scanner scanner = new Scanner(System.in);
 
@@ -13,9 +16,11 @@ public class gui {
     }
 
     public void run() {
-        while (true) {
-            System.out.println("1 Show Products");
-            System.out.println("2 Show Stock value");
+        boolean done = false;
+        while (!done) {
+            System.out.println("1: Show Products");
+            System.out.println("2: Show Stock value");
+            System.out.println("Everything else: End Program");
 
             int choice = scanner.nextInt();
             switch (choice) {
@@ -23,7 +28,11 @@ public class gui {
                     showProducts();
                     break;
 
+                case 2:
+                    showChar();;
+
                 default:
+                    done = true;
                     break;
             }
 
@@ -37,5 +46,12 @@ public class gui {
         }
 
     }
-}
 
+    private void showChar() {
+        System.out.println("show Char");
+        for (Char Char : chars) {
+            System.out.println("Name: " + Char.getChar());
+        }
+
+    }
+}
