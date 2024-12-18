@@ -3,7 +3,7 @@ package Algorithm;
 public class Main {
 
     public static void main(String[] args) {
-        Tractor t1 = new Tractor("red", "Supercar");
+        Tractor t1 = new Tractor("red", "Lambo Tractor");
         Plane p1 = new Plane("blue", "Plane");
 
         gui gui = new gui();
