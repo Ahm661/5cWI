@@ -1,7 +1,9 @@
 sum = 1;
-for (let i = 1; i <= 10; i++) {
-    result = i * 3;
-    zahl = i;
-    console.log(zahl + " * 3 = " + result);
+hel = "hello"
+let letters = hel.split("")
+
+for (let i = 4; i >= 0; i--) {
+    
+    console.log(letters);
     
 }
